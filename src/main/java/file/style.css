@@ -1,0 +1,53 @@
+.main-class {
+  -fx-background-image: url('http://icons.iconarchive.com/icons/mirella-gabriele/fantasy-mediaeval/256/Poison-blue-icon.png');
+  -fx-background-repeat: stretch;   
+  -fx-background-size: 570 220;
+  -fx-background-position: center center;
+  -fx-background-insets: 30;
+}
+
+.button1{
+    -fx-text-fill: #006464;
+    -fx-background-color: #DFB951;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+	-fx-alignment: center;
+}
+
+.centerlabel{
+	-fx-alignment: center;
+	-fx-text-fill: #006464;
+    -fx-background-color: #DFB951;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.diagram-pane {
+    -fx-background-color: #f8ecc2;
+    -fx-font-size: 8pt;
+}
+
+.red-border {
+    -fx-background-color: red, white;
+    -fx-background-insets: 0, 2;
+    -fx-padding: 2.0;
+}
+
+.root {
+    -fx-base: #bfe7ff; 
+    -fx-accent: #0096c9 ;
+    -fx-default-button: #abd8ed ;
+    -fx-focus-color: #039ed3;
+    -fx-faint-focus-color: #039ed322;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;  
+
+    -fx-font-family: sans-serif;  
+}
