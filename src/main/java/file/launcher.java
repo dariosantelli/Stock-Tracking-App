@@ -158,49 +158,7 @@ public class launcher extends Application {
                 lowelement.setText(stockDatazerolow);
                 closeelement.setText(stockDatazeroclose);
                 
-            	
-            	//Label[] label = new Label[cbi];
-                
-                for (int i=0; i<cbi; i++) {
-               	
-                	/*
-                	LocalDateTime stockDatazerodt = stockData.get(i).getDateTime();
-                	
-                	//Assign received values to variables
-                	String stockDataOpenTemp = Double.toString(stockData.get(i).getOpen());
-                	String stockDataHighTemp = Double.toString(stockData.get(i).getHigh());
-                	String stockDataLowTemp = Double.toString(stockData.get(i).getLow());
-                	String stockDataCloseTemp = Double.toString(stockData.get(i).getClose());
-                	String formattedDateTimeTemp = stockDatazerodt.format(formatter);
 
-                	*/
-
-                	/*
-                	System.out.println(stockDataOpenTemp);
-                	System.out.println(stockDataHighTemp);
-                	System.out.println(stockDataLowTemp);
-                	System.out.println(stockDataCloseTemp);
-                	System.out.println(formattedDateTimeTemp); */
-  
-                	//label[i] = new Label();
-                	
-                	//label[i].setText(test.get(i));
-                	
-                	//grid.add(label[i], i, 3);
-                	
-                    //openelement.setText(stockDataOpenTemp);
-                    //highelement.setText(stockDataHighTemp);
-                    //lowelement.setText(stockDataLowTemp);
-                    //closeelement.setText(stockDataCloseTemp);
-                    //datetimeelement.setText(formattedDateTimeTemp);
-                    
-                    //grid.add(datetimeelement, 0, i+2);
-                    //grid.add(openelement, 1, i+2);
-                    //grid.add(highelement, 2, i+2);
-                    //grid.add(lowelement, 3, i+2);
-                    //grid.add(closeelement, 4, i+2);
-                    
-                }
             }
         });
         
@@ -308,7 +266,6 @@ public class launcher extends Application {
         
         //Initialize Added Ticker Labels
         Label tickerLabelZero = new Label("");
-        //tickerLabelZero.getStyleClass().add("centerlabel");
         Label tickerLabelOne = new Label("");
         Label tickerLabelTwo = new Label("");
         Label tickerLabelThree = new Label("");
@@ -333,7 +290,6 @@ public class launcher extends Application {
         
         //Initialize gridpane within tab one
         GridPane pricegrid = new GridPane();
-        //pricegrid.setGridLinesVisible(true);
         pricegrid.setHgap(10);
         pricegrid.setVgap(5);
         pricegrid.setPrefWidth(800);
@@ -392,12 +348,10 @@ public class launcher extends Application {
         //Add timeframe label
         pricegrid.add(dropdown, 1, 2);
         Label drop = new Label("Change Timeframe");
-        //drop.getStyleClass().add("button1");
         
         
         //Refresh button
         Button timeframeRefresh = new Button();
-        //timeframeRefresh.getStyleClass().add("button1");
         timeframeRefresh.setText("Refresh");
         timeframeRefresh.setOnAction(new EventHandler<ActionEvent>() {
          	 
